@@ -1,0 +1,1 @@
+copyto /something/omni/device/lenovo/P780
