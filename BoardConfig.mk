@@ -1,9 +1,9 @@
-DEVICE_FOLDER := device/lenovo/p780
+DEVICE_FOLDER := device/lenovo/P780
 
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/lenovo/p780/BoardConfigVendor.mk
+-include vendor/lenovo/P780/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_BOARD_PLATFORM := MT6589
@@ -32,12 +32,11 @@ TARGET_POWERHAL_VARIANT := cm
 TARGET_NO_BOOTLOADER := true
 
 # EGL settings
-BOARD_EGL_CFG := device/lenovo/p780/egl.cfg
+BOARD_EGL_CFG := device/lenovo/P780/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
 # kernel
-#TARGET_PREBUILT_KERNEL := device/lenovo/p780/kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_FOLDER)/prebuilt/kernel
 BOARD_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE := 0x10000000
@@ -59,7 +58,6 @@ DEVICE_RESOLUTION := 720x1280
 
 # mkimage to append headers
 TARGET_MKIMAGE := $(DEVICE_FOLDER)/mkimage
-#TARGET_MKIMAGE := device/lenovo/p780/mkimage
 TARGET_USE_BUILT_BOOTIMAGE := true
 
 TW_INTERNAL_STORAGE_PATH := "/emmc"

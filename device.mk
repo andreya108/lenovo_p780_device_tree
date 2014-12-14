@@ -15,7 +15,7 @@
 #
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/lenovo/p780-kernel/kernel
+LOCAL_KERNEL := device/lenovo/P780-kernel/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -26,4 +26,4 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
 	$(DEVICE_FOLDER)/default.prop:default.prop
 
-$(call inherit-product-if-exists, vendor/lenovo/p780/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/P780/device-vendor.mk)
