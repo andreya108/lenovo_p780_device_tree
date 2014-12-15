@@ -225,7 +225,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="120" y="45" />
-				<text>Lenovo P780 CN, by andreya108 (4pda.ru)</text>
+				<text>%tw_product_model%, by andreya108 (4pda.ru)</text>
 			</object>
 
 			<object type="text" color="%text_color%">
